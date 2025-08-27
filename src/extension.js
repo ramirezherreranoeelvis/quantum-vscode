@@ -17,10 +17,10 @@ const messages = {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'RobbOwen.synthwave-vscode';
+	this.extensionName = 'GatomontesRoseIII.quantum-vscode';
 	this.cntx = context;
 
-	const config = vscode.workspace.getConfiguration("synthwave84");
+	const config = vscode.workspace.getConfiguration("QuantumSynthwave");
 
 	let disableGlow = config && config.disableGlow ? !!config.disableGlow : false;
 
@@ -31,7 +31,7 @@ function activate(context) {
 	const parsedBrightness = Math.floor(brightness * 255).toString(16).toUpperCase();
 	let neonBrightness = parsedBrightness;
 
-	let disposable = vscode.commands.registerCommand('synthwave84.enableNeon', function () {
+	let disposable = vscode.commands.registerCommand('QuantumSynthwave.enableNeon', function () {
 		const appDir = path.dirname(vscode.env.appRoot);
 		const base = path.join(appDir, 'app', 'out', 'vs', 'code');
 
@@ -43,7 +43,7 @@ function activate(context) {
 		const [electronBase, workBenchFilename] = workbenchPaths;
 
 		const htmlFile = path.join(base, electronBase, "workbench", workBenchFilename);
-		const templateFile = path.join(base, electronBase, "workbench", "neondreams.js");
+		const templateFile = path.join(base, electronBase, "workbench", "quantum.js");
 
 		try {
 			// generate production theme JS
@@ -58,16 +58,16 @@ function activate(context) {
 			const html = fs.readFileSync(htmlFile, "utf-8");
 
 			// check if the tag is already there
-			const isEnabled = html.includes("neondreams.js");
+			const isEnabled = html.includes("quantum.js");
 
 			if (!isEnabled) {
 				// delete synthwave script tag if there
 				let output = html
-					.replace(/^.*(<!-- SYNTHWAVE 84 --><script src="neondreams.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
+					.replace(/^.*(<!-- SYNTHWAVE QUANTUM --><script src="quantum.js"><\/script><!-- NEON DREAMS -->).*\n?/mg, '');
 
 				// add script tag
 				output = html
-					.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE 84 --><script src="neondreams.js"></script><!-- NEON DREAMS -->\n`);
+					.replace(/\<\/html\>/g, `	<!-- SYNTHWAVE QUANTUM --><script src="quantum.js"></script><!-- NEON QUANTUM -->\n`);
 				output += '</html>';
 
 				fs.writeFileSync(htmlFile, output, "utf-8");
@@ -95,7 +95,7 @@ function activate(context) {
 		}
 	});
 
-	let disable = vscode.commands.registerCommand('synthwave84.disableNeon', uninstall);
+	let disable = vscode.commands.registerCommand('QuantumSynthwave.disableNeon', uninstall);
 
 	context.subscriptions.push(disposable);
 	context.subscriptions.push(disable);
@@ -125,7 +125,7 @@ function uninstall() {
 		const html = fs.readFileSync(htmlFile, "utf-8");
 
 		// check if the tag is already there
-		const isEnabled = html.includes("neondreams.js");
+		const isEnabled = html.includes("quantum.js");
 
 		if (isEnabled) {
 			// delete synthwave script tag if there

@@ -1,14 +1,14 @@
 {
-    "name": "synthwave-vscode",
-    "displayName": "SynthWave '84",
+    "name": "quantum-vscode",
+    "displayName": "Quantum Synthwave",
     "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
     "version": "0.1.20",
-    "author": "Robb Owen",
-    "publisher": "RobbOwen",
+    "author": "GatomontesRoseIII",
+    "publisher": "GatomontesRoseIII",
     "icon": "icon.png",
     "repository": {
         "type": "git",
-        "url": "https://github.com/robb0wen/synthwave-vscode"
+        "url": "https://github.com/ramirezherreranoeelvis/quantum-vscode"
     },
     "engines": {
         "vscode": "^1.33.0"
@@ -24,40 +24,40 @@
         "Themes"
     ],
     "activationEvents": [
-        "onCommand:synthwave84.enableNeon",
-        "onCommand:synthwave84.disableNeon"
+        "onCommand:QuantumSynthwave.enableNeon",
+        "onCommand:QuantumSynthwave.disableNeon"
     ],
     "main": "./src/extension.js",
     "contributes": {
         "themes": [
             {
-                "label": "SynthWave '84",
+                "label": "Quantum Synthwave",
                 "uiTheme": "vs-dark",
-                "path": "./themes/synthwave-color-theme.json"
+                "path": "./themes/quantum-color-theme.json"
             }
         ],
         "commands": [
             {
-                "command": "synthwave84.enableNeon",
-                "title": "Synthwave '84: Enable Neon Dreams"
+                "command": "QuantumSynthwave.enableNeon",
+                "title": "Quantum Synthwave: Enable Neon Dreams"
             },
             {
-                "command": "synthwave84.disableNeon",
-                "title": "Synthwave '84: Disable Neon Dreams"
+                "command": "QuantumSynthwave.disableNeon",
+                "title": "Quantum Synthwave: Disable Neon Dreams"
             }
         ],
         "configuration": {
-            "title": "Synthwave '84",
+            "title": "Quantum Synthwave",
             "properties": {
-                "synthwave84.brightness": {
+                "QuantumSynthwave.brightness": {
                     "type": "number",
                     "default": 0.45,
                     "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
                 },
-                "synthwave84.disableGlow": {
+                "QuantumSynthwave.disableGlow": {
                     "type": "boolean",
                     "default": false,
-                    "description": "Disable the glow effect, but show Synthwave '84 editor chrome updates"
+                    "description": "Disable the glow effect, but show Quantum Synthwave editor chrome updates"
                 }
             }
         }
