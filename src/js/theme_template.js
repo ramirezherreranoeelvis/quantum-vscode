@@ -65,7 +65,7 @@
                   '[class*="theme-json"]'
             );
             const synthWaveTheme = document.querySelector(
-                  '[class*="GatomontesRoseIII-quantum-vscode-themes"]'
+                  '[class*="GatomontesRoselll-quantum-vscode-themes"]'
             );
             return appliedTheme && synthWaveTheme;
       };

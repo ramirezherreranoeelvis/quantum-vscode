@@ -17,7 +17,7 @@ const messages = {
  * @param {vscode.ExtensionContext} context
  */
 function activate(context) {
-	this.extensionName = 'GatomontesRoseIII.quantum-vscode';
+	this.extensionName = 'GatomontesRoselll.quantum-vscode';
 	this.cntx = context;
 
 	const config = vscode.workspace.getConfiguration("QuantumSynthwave");
