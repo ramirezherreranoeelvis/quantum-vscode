@@ -1,65 +1,75 @@
 {
-    "name": "quantum-vscode",
-    "displayName": "Quantum Synthwave",
-    "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
-    "version": "0.1.21",
-    "author": "GatomontesRoselll",
-    "publisher": "GatomontesRoselll",
-    "icon": "icon.png",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/ramirezherreranoeelvis/quantum-vscode"
-    },
-    "engines": {
-        "vscode": "^1.33.0"
-    },
-    "extensionKind": [
-        "ui"
-    ],
-    "keywords": [
-        "retro",
-        "80s"
-    ],
-    "categories": [
-        "Themes"
-    ],
-    "activationEvents": [
-        "onCommand:QuantumSynthwave.enableNeon",
-        "onCommand:QuantumSynthwave.disableNeon"
-    ],
-    "main": "./src/extension.js",
-    "contributes": {
-        "themes": [
-            {
-                "label": "Quantum Synthwave",
-                "uiTheme": "vs-dark",
-                "path": "./themes/quantum-color-theme.json"
+      "name": "quantum-vscode",
+      "displayName": "Quantum Synthwave",
+      "description": "A Synthwave-inspired colour theme to satisfy your neon dreams",
+      "version": "0.1.21",
+      "author": "GatomontesRoselll",
+      "publisher": "GatomontesRoselll",
+      "icon": "icon.png",
+      "repository": {
+            "type": "git",
+            "url": "https://github.com/ramirezherreranoeelvis/quantum-vscode"
+      },
+      "engines": {
+            "vscode": "^1.33.0"
+      },
+      "extensionKind": [
+            "ui"
+      ],
+      "keywords": [
+            "retro",
+            "80s"
+      ],
+      "categories": [
+            "Themes"
+      ],
+      "activationEvents": [
+            "onCommand:QuantumSynthwave.enableNeon",
+            "onCommand:QuantumSynthwave.disableNeon",
+            "onCommand:NebulosaSynthwave.enableNeon"
+      ],
+      "main": "./src/extension.js",
+      "contributes": {
+            "themes": [
+                  {
+                        "label": "Quantum Synthwave",
+                        "uiTheme": "vs-dark",
+                        "path": "./themes/quantum-color-theme.json"
+                  }
+            ],
+            "commands": [
+                  {
+                        "command": "QuantumSynthwave.enableNeon",
+                        "title": "Quantum Synthwave: Enable Neon Dreams"
+                  },
+                  {
+                        "command": "QuantumSynthwave.disableNeon",
+                        "title": "Quantum Synthwave: Disable Neon Dreams"
+                  },
+                  {
+                        "command": "NebulosaSynthwave.enableNeon",
+                        "title": "Nebulosa Synthwave: Enable Neon Dreams"
+                  }
+            ],
+            "configuration": {
+                  "title": "Quantum Synthwave",
+                  "properties": {
+                        "QuantumSynthwave.brightness": {
+                              "type": "number",
+                              "default": 0.45,
+                              "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
+                        },
+                        "QuantumSynthwave.disableGlow": {
+                              "type": "boolean",
+                              "default": false,
+                              "description": "Disable the glow effect, but show Quantum Synthwave editor chrome updates"
+                        }
+                  }
             }
-        ],
-        "commands": [
-            {
-                "command": "QuantumSynthwave.enableNeon",
-                "title": "Quantum Synthwave: Enable Neon Dreams"
-            },
-            {
-                "command": "QuantumSynthwave.disableNeon",
-                "title": "Quantum Synthwave: Disable Neon Dreams"
-            }
-        ],
-        "configuration": {
-            "title": "Quantum Synthwave",
-            "properties": {
-                "QuantumSynthwave.brightness": {
-                    "type": "number",
-                    "default": 0.45,
-                    "description": "Set the brightness value for the glow effect. 0.0 is fully transparent and 1.0 is fully bright"
-                },
-                "QuantumSynthwave.disableGlow": {
-                    "type": "boolean",
-                    "default": false,
-                    "description": "Disable the glow effect, but show Quantum Synthwave editor chrome updates"
-                }
-            }
-        }
-    }
+      },
+      "__metadata": {
+            "installedTimestamp": 1760937476834,
+            "targetPlatform": "undefined",
+            "size": 720725
+      }
 }

@@ -1,15 +1,30 @@
 # Quantum SynthWave - VS Code theme
 
-![Synthwave '84 logo over a cityscape](./banner.png)
+![Synthwave '84 logo over a cityscape](https://github.com/ramirezherreranoeelvis/quantum-vscode/raw/HEAD/banner.png)
 
-I loved SynthWave '84 for the Neon colors, but I felt like it didn't fit me and decided to use a completely different color palette, something I felt more comfortable with. I would love to be able to show you what I did like.
+**Theme1**
 
-**theme**
+Enable:
+Ctrl + Shift + P or Shift + ⌘ + P and select "**Quantum Synthwave: Enable Neon Dreams**."
 
-Command Palette with Ctrl + Shift + P or Shift + ⌘ + P and select "**Enable Neon Dreams**
-
-Command Palette with "Ctrl + Shift + P" or "Shift + ⌘ + P" and selecting "**Disable Neon Dreams**"
 ![Neon glowing text](./theme.jpg)
+
+**Theme2**
+
+Enable:
+"Ctrl + Shift + P" or "Shift + ⌘ + P" and selecting "**Nebulosa Synthwave: Enable Neon Dreams**".
+
+![Neon glowing text](./theme-nebulosa.jpg)
+
+Disable Any Theme:
+"Ctrl + Shift + P" or "Shift + ⌘ + P" and selecting "**Quantum Synthwave: Disable Neon Dreams**".
+
+## warning
+If when trying to change from one theme to another it does not appear when restarting with the button, try closing and opening vscode again.
+
+## But...why?
+
+I wanted to create a new theme to my liking, using my favorite colors from this theme and a color palette that makes me feel good, I simply felt that the original was missing something that I felt I could give it to find what I was looking for.
 
 ## Installation
 
